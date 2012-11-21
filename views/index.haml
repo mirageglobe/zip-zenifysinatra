@@ -1,0 +1,88 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js lt-ie9">
+/ [if gt IE 8]><!
+%html.no-js
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %title
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "width=device-width", :name => "viewport"}
+    %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}
+    :css
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    %link{:href => "css/bootstrap-responsive.min.css", :rel => "stylesheet"}
+    %link{:href => "css/main.css", :rel => "stylesheet"}
+    %script{:src => "js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"}
+
+  %body
+    /[if lt IE 7]
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    / This code is taken from http://twitter.github.com/bootstrap/examples/hero.html
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => "#"} AllDayCity
+          .nav-collapse.collapse
+            %ul.nav
+              %li.active
+                %a{:href => "#"} Home
+            %form.navbar-form.pull-right
+              /%input.span2{:placeholder => "Email", :type => "text"}
+              /%input.span2{:placeholder => "Password", :type => "password"}
+              /%button.btn{:type => "submit"} Sign in
+          / /.nav-collapse
+    .container
+      / Main hero unit for a primary marketing message or call to action
+      .hero-unit
+        %h1 Platform Launch
+        %canvas#paperCircle.canvas{:height => "200", :style => "background-color: white;", :width => "200"}
+        %p
+          %a.btn.btn-primary.btn-large Learn more »
+      / Example row of columns
+      .row
+        .span4
+          %h2 About
+          %p AllDayCity is project based on a short story "the virtual mall" in August 2001. All Day City is the evolution and built to investigate methods of relationship of unique objects.
+          %p
+            %a.btn{:href => "#"} View details »
+        .span4
+          %h2 Updates
+          %p 2012 Nov - AllDayCity Development Launch
+          %p
+            %a.btn{:href => "#"} View details »
+        .span4
+          %h2 Contact
+          %p Jimmy MG Lim
+          %p Jimmy is a freelance developer / software engineer / Operations Manager & Coordinator (KITC University of Kent). He is currently researching on automatic relationships between data and applications. His interest is in rapid application development and cloud computing.
+          %p 
+            %a.btn{:href => "#"} View details »   
+      %hr
+        %footer
+          %p © A MGLIM Project Since Autumn 2012
+    / /container
+    // included paper js from cdnjs
+    %script{:src => "http://cdnjs.cloudflare.com/ajax/libs/paper.js/0.22/paper.js"}
+    %script#script{:canvas => "paperCircle", :src => "paper_circle.pjs", :type => "text/paperscript"}
+
+    :javascript
+    var circle = new Path.Circle(new Point(100, 100), 10);
+    circle.fillColor = '#ee2a33';
+    
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
+    :javascript
+      window.jQuery || document.write('<\/script>')
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
