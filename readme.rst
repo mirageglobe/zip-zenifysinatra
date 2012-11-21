@@ -1,31 +1,22 @@
 ========================
-AllDayCity
+HeroBroTheme
 ========================
 
-Plan
+Executive Summary
+------------------------
+This is a brouchure template for hosting simple websites on heroku. It is based on ruby.
+
+To Do
 ------------------------
 
-
-Short Tasks
+Plans
 ------------------------
-- Upload to Heroku (done)
+N/A
 
-Long Tasks
+Includes
 ------------------------
-- Choose between KineticJS / PaperJS / EaselJS / ProcessingJS
-- Most likely KineticJS
-
-- Need to draw level based houses to link to othersites.
--- Think of how to link new websites.
--- Perhaps just links between each node
--- Perhaps link floating clouds of websites.
-
-Uses
-------------------------
-- Initializr
-- Bootstrap (Twitter)
+- Initializr 4.0 (Bootstrap)
 - Sinatra / Thin / Rack / Ruby
 
 References
 ------------------------
-http://www.themaninblue.com/experiment/Cubescape
