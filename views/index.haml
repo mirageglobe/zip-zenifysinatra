@@ -46,7 +46,7 @@
       / Main hero unit for a primary marketing message or call to action
       .hero-unit
         %h1 Platform Launch
-        %canvas#paperCircle.canvas{:height => "200", :style => "background-color: white;", :width => "200"}
+        %canvas#paperCircle.canvas{:height => "200", :width => "100%", :style => "background-color: white;", }
         %p
           %a.btn.btn-primary.btn-large Learn more »
       / Example row of columns
@@ -69,20 +69,22 @@
             %a.btn{:href => "#"} View details »   
       %hr
         %footer
-          %p © A MGLIM Project Since Autumn 2012
+          %p © A MGLIM Project Since Autumn 2013
     / /container
     // included paper js from cdnjs
     %script{:src => "http://cdnjs.cloudflare.com/ajax/libs/paper.js/0.22/paper.js"}
     %script#script{:canvas => "paperCircle", :src => "paper_circle.pjs", :type => "text/paperscript"}
-
-    :javascript
-    var circle = new Path.Circle(new Point(100, 100), 10);
-    circle.fillColor = '#ee2a33';
     
-    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
+    %script{:src => "js/vendor/bootstrap.min.js"}
+    %script{:src => "js/main.js"}
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+    
     :javascript
-      window.jQuery || document.write('<\/script>')
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+      var circle = new Path.Circle(new Point(100, 100), 10);
+      circle.fillColor = '#ee2a33';
+    
+    :javascript
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
