@@ -32,15 +32,15 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand{:href => "#"} AllDayCity
+          %a.brand{:href => "#"} HeroBroTheme
           .nav-collapse.collapse
             %ul.nav
               %li.active
                 %a{:href => "#"} Home
             %form.navbar-form.pull-right
-              /%input.span2{:placeholder => "Email", :type => "text"}
-              /%input.span2{:placeholder => "Password", :type => "password"}
-              /%button.btn{:type => "submit"} Sign in
+              %input.span2{:placeholder => "Email", :type => "text"}
+              %input.span2{:placeholder => "Password", :type => "password"}
+              %button.btn{:type => "submit"} Sign in
           / /.nav-collapse
     .container
       / Main hero unit for a primary marketing message or call to action
@@ -71,18 +71,11 @@
         %footer
           %p
             %a{:href => "//www.mglim.com"} © A MGLIM Project Since Autumn 2012
-    / /container
-    // included paper js from cdnjs
-    %script{:src => "http://cdnjs.cloudflare.com/ajax/libs/paper.js/0.22/paper.js"}
-    %script#script{:canvas => "paperCircle", :src => "paper_circle.pjs", :type => "text/paperscript"}
+    / /container    
     
     %script{:src => "js/vendor/bootstrap.min.js"}
     %script{:src => "js/main.js"}
-    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
-    
-    :javascript
-      var circle = new Path.Circle(new Point(100, 100), 10);
-      circle.fillColor = '#ee2a33';
+    %script{:src => "//code.jquery.com/jquery-latest.js"}
     
     :javascript
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
