@@ -1,5 +1,5 @@
 ========================
-HeroBroTheme
+Heroku App Frame
 ========================
 
 Executive Summary
@@ -8,10 +8,7 @@ This is a brouchure template for hosting simple websites on heroku. It is based 
 
 To Do
 ------------------------
-
-Plans
-------------------------
-N/A
+Update it to conform to current mglim site
 
 Includes
 ------------------------

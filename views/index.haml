@@ -11,25 +11,41 @@
     %title
     %meta{:content => "", :name => "description"}
     %meta{:content => "width=device-width", :name => "viewport"}
-    %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}
+
+    %link{:href => "//code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css", :rel => "stylesheet"}
+
+    / %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}
+    %link{:href => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css", :rel => "stylesheet"}
+
     :css
-        body {
-            padding-top: 60px;
-            padding-bottom: 40px;
-        }
-        p {
-            text-align: justify;
-        }
-    %link{:href => "css/bootstrap-responsive.min.css", :rel => "stylesheet"}
-    %link{:href => "css/main.css", :rel => "stylesheet"}
-    %script{:src => "js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"}
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
 
-    %link{:href => "apple-touch-icon-144x144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}
-    %link{:href => "apple-touch-icon-114x114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
-    %link{:href => "apple-touch-icon-72x72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
-    %link{:href => "apple-touch-icon-57x57-precomposed.png", :rel => "apple-touch-icon-precomposed"}
+      p {
+        text-align: justify;
+      }
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+    / %link{:href => "css/bootstrap-responsive.min.css", :rel => "stylesheet"}
+    / responsive CSS must be after padding css 
+    %link{:href => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-responsive.min.css", :rel => "stylesheet"}
+
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"}
+
+    %link{:href => "apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}
+    %link{:href => "apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
+    %link{:href => "apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
+    %link{:href => "apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}
     %link{:href => "favicon.ico?v=2", :rel => "shortcut icon"}
-
   %body
     /[if lt IE 7]
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
@@ -76,31 +92,30 @@
           %a.btn.btn-primary.btn-large Learn more »
       / Example row of columns
       .row
-        .span4
-          %h2 About
-          %p AllDayCity is project based on a short story "the virtual mall" in August 2001. All Day City is the evolution and built to investigate methods of relationship of unique objects.
+        .span6
+          %h2 Something A
+          %p Details of Something A
           %p
             %a.btn{:href => "#"} View details »
-        .span4
-          %h2 Updates
-          %p 2012 Nov - AllDayCity Development Launch
+        .span6
+          %h2 Something B
+          %p Details of Something B
           %p
             %a.btn{:href => "#"} View details »
-        .span4
-          %h2 Contact
-          %p Jimmy MG Lim
-          %p Jimmy is a freelance developer / software engineer / Operations Manager & Coordinator (KITC University of Kent). He is currently researching on automatic relationships between data and applications. His interest is in rapid application development and cloud computing.
-          %p 
-            %a.btn{:href => "#"} View details »   
       %hr
         %footer
           %p
-            %a{:href => "//www.mglim.com"} © A MGLIM Project Since Autumn 2012
+            %a{:href => "//www.mglim.com"} © A MGLIM Project
     / /container    
     / JQuery needs to be loaded first!
-    %script{:src => "//code.jquery.com/jquery-latest.js"}    
-    %script{:src => "js/vendor/bootstrap.min.js"}
-    %script{:src => "js/main.js"}
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    %script{:src => "//code.jquery.com/ui/1.10.1/jquery-ui.js"}
+
+    / %script{:src => "js/vendor/bootstrap.min.js"}
+    %script{:src => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"}
+
+    / %script{:src => "js/vendor/kinetic-v4.3.3.min.js"}
+    %script{:src => "//d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.3.3.min.js"}
 
     :javascript
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
