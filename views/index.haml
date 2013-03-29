@@ -15,7 +15,11 @@
     %link{:href => "//code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css", :rel => "stylesheet"}
 
     / %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}
-    %link{:href => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css", :rel => "stylesheet"}
+    / %link{:href => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css", :rel => "stylesheet"}
+    / %link{:href => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css", :rel => "stylesheet"}
+    %link{:href => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css", :rel => "stylesheet"}
+    %link{:href => "//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css", :rel => "stylesheet"}
+    %link{:href => "//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome-ie7.css", :rel => "stylesheet"}
 
     :css
       body {
@@ -94,7 +98,9 @@
       .row
         .span6
           %h2 Something A
-          %p Details of Something A
+          %p
+            %i.icon-camera-retro.icon-4x
+              icon-camera-retro
           %p
             %a.btn{:href => "#"} View details »
         .span6
@@ -112,7 +118,7 @@
     %script{:src => "//code.jquery.com/ui/1.10.1/jquery-ui.js"}
 
     / %script{:src => "js/vendor/bootstrap.min.js"}
-    %script{:src => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"}
+    %script{:src => "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"}
 
     / %script{:src => "js/vendor/kinetic-v4.3.3.min.js"}
     %script{:src => "//d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.3.3.min.js"}
