@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.2.1'
 
+gem 'puma'
 gem 'sinatra'
-gem 'rack'
-gem 'thin'
-gem 'tilt', '1.3.4'
-gem 'haml'
-gem 'coffee-script'
+gem 'sinatra-contrib'
