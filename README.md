@@ -11,9 +11,14 @@ ZenifySinatra is designed to make the life of developers easier. It's built usin
 - Includes FontAwesome 4.2.0 (via CDN)
 - Includes Jquery 2.1.1 (via CDN)
 - Mobile Responsive (First)
-- Built with Sinatra / Thin / Rack / Ruby / HAML
+- Built with Sinatra - Puma / HAML
 
 # To use #
+
+ensure foreman is installed,
+```
+  $ gem install foreman
+```
 
 to run clone repo,
 ```
@@ -24,7 +29,7 @@ to run clone repo,
 
 a few points to note before submitting PR :
 
-- minimal number of files (php settings etc)
+- minimal number of files (settings etc)
 - use CDN (Content Delivery network) when possible to reduce hosted repos
 - mobile responsive enabling
 - follow bootstrap guidelines
@@ -32,6 +37,7 @@ a few points to note before submitting PR :
 
 # Roadmap #
 
+- added sample vuejs / nuxt
 - [done] update theme with erb / haml
 
 # License

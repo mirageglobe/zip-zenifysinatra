@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-ruby '2.2.1'
+ruby '~> 2.5.0'
 
-gem 'puma'
 gem 'sinatra'
 gem 'sinatra-contrib'
+gem 'puma'
