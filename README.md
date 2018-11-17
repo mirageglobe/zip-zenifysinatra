@@ -20,9 +20,14 @@ ensure foreman is installed,
   $ gem install foreman
 ```
 
-to run clone repo,
+to run, clone repo, and either use foreman
 ```
-  $ bundle exec foreman start
+  $ foreman start
+```
+
+or
+```
+  $ ruby app.ru
 ```
 
 # Guidelines #
