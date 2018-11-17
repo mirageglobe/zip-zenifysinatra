@@ -37,7 +37,8 @@ a few points to note before submitting PR :
 
 # Roadmap #
 
-- added sample vuejs / nuxt
+- add sample vuejs / nuxt
+- add erb sample
 - [done] update theme with erb / haml
 
 # License
