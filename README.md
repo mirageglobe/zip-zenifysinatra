@@ -1,5 +1,7 @@
 # ZenifySinatra #
 
+This project is archived.
+
 - author/site : Jimmy MG Lim (mirageglobe@gmail.com) / www.mirageglobe.com
 - source : https://github.com/mirageglobe/zenifysinatra
 
